@@ -9,3 +9,4 @@ tags:
 
 # 西藏风景
 ![](https://github.com/wt812/git-blog_pic/blob/master/604.jpg?raw=true)
+# 西藏好风光
