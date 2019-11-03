@@ -23,7 +23,7 @@
 <%- js('config.' + theme.runtime.configHash) %>
 <% if (theme.ga) { %><%- ga(theme.ga) %><% } -%>
 </head>
-<body lang="<%= config.language %>">
+<body lang="<%= config.language %>" style="background: #f1f1f1">
 <%- `<${theme.runtime.selector}></${theme.runtime.selector}>` %>
 <%- theme.scripts %>
 </body>

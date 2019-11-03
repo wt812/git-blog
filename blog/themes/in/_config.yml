@@ -33,16 +33,16 @@ appearance:
     # Base font which applied to body
     base: "'Josefin Sans', 'PingFang SC'"
     # Sidebar author font, fallback to `base`
-    logo:
+    logo: 
     # Sidebar menu font, fallback to `base`
     menu: 'Baloo Bhaijaan'
-    # Font for:
-    # - percentage on the fab button
-    # - month text on archives page
-    # - count
-    # - pager
-    # - toc index
-    # - category pill
+    Font for:
+    - percentage on the fab button
+    - month text on archives page
+    - count
+    - pager
+    - toc index
+    - category pill
     # fallback to `base`
     label: Montserrat
     # Headline(h1, h2, h3, h4, h5, h6) font, fallback to `base`
@@ -75,40 +75,40 @@ appearance:
   # ]
 
   # Tomorrow Night by Chris Kempson (http://chriskempson.com)
-  # highlight: [
-  #   '#1d1f21', '#282a2e', '#373b41', '#969896',
-  #   '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
-  #   '#cc6666', '#de935f', '#f0c674', '#b5bd68',
-  #   '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
-  # ]
+  highlight: [
+    '#1d1f21', '#282a2e', '#373b41', '#969896',
+    '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
+    '#cc6666', '#de935f', '#f0c674', '#b5bd68',
+    '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
+  ]
 
 # Sidebar profile
-profile:
+profile: 
   # `email` is used for gravatar(https://en.gravatar.com),
   # fallback to `hexo.config.email` if not specified
-  email:
+  email: 
 
   # You can set Avatar URL directly
-  # avatar:
+  avatar: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
 
-  bio: Awesome guy.
+  bio: This is me
 
 # Sidebar navigation links
 menu:
   Home: /
   About: /about
-  Links: /links
-  # Github: https://github.com/username
+  Search: /search
+  # Github: /github.com/wt812
 
 # Social media URL
 # Try to sort by changing the order of the keys
 sns:
   # `email` will fallback to `profile.email` if not specified
-  email:
+  email: wt812haaply@gmail.com
   # If you use hexo-generator-feed, `sns.feed` can be left blank
   # and the theme will try to get `hexo.config.feed.path`.
   feed:
-  github:
+  github: https://github.com/wt812
   twitter:
   facebook:
   instagram:
@@ -122,12 +122,13 @@ sns:
   soundcloud:
   myspace:
   weibo:
-  qq:
+  qq: 
 
 # Sidebar footer copyright info
 footer:
   # Set to false to hide.
-  copyright: '&copy; 11111112019 • <a href="">John Doe</a>'
+  # copyright: '&copy; 2019 • <a href="">Wt</a>'
+  copyright: false
 
   # Set to false to hide Hexo link.
   powered: false
@@ -136,8 +137,8 @@ footer:
   theme: false
 
   # Custom text.
-  custom: Hosted by <a target="_blank" rel="external nofollow"
-    href="https://pages.github.com/"><b>Github Pages</b></a>
+  # custom: Hosted by <a target="_blank" rel="external nofollow"
+  #   href="https://pages.github.com/"><b>Github Pages</b></a>
 
 
 # ---------------------------------------------------------------
@@ -147,7 +148,7 @@ footer:
 # Page
 page:
   # Display Table of content, default to `true`
-  toc: true
+  toc: false
 
   # Display reward, default to `false`
   reward: true
@@ -242,63 +243,57 @@ toc:
   depth: 3
 
   # Showing index before title, eg. 1.1 title, default to `true`
-  index: true
+  index: false
 
 # Reward
 reward:
   # Text which shows at the top.
-  # text: Buy me a cup of coffee ☕.
+  text: Buy me a cup of coffee ☕.
 
   # Payment Methods
   # qrcode, url and text must be set at least one
   # wechat, alipay, paypal and bitcoin has a built-in icon,
   # use `name` to apply
-  # methods:
-  #   - name: paypal
-  #     qrcode: paypal.jpg
-  #     url: https://paypal.me/imelmore
-  #     text: This is a paypal payment link
-  #     color: '#09bb07'
+  methods:
+    - name: wechat
+      qrcode: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
+      # url: https://paypal.me/imelmore
+      # text: This is a paypal payment link
+      color: '#09bb07'
 
 # Copyright notice
 # It is possible to use front matter `copyright` to override this setting.
 copyright:
-  # Display author, default to `true`
-  # author: true
-
-  # Display link, default to `true`
-  # link: false
-
-  # license: Attribution-NonCommercial-NoDerivatives 4.0 International
-  #   (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"
-  #   rel=\"external nofollow\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
-
-  # Display published date, default to `false`
-  # published: false
-
-  # Display updated date, default to `false`
-  # updated: false
-
-  # Custom text, override above settings
-  # custom: my copyright
+  # 显示作者，设置为 false 可隐藏。
+  author: false
+  # 显示文章链接，设置为 false 可隐藏。
+  link: true
+  # 版权声明
+  license: 自由转载-非商用-禁止演绎-保持署名(<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noopener" target="_blank">CC BY-NC-ND 4.0</a>)
+  # 显示发表日期，默认不显示，设置为 true 可显示。
+  published: false
+  # 显示修改日期，默认不显示，设置为 true 可显示。
+  updated: false
+  # 禁用以上设置，显示自定义信息
+  # custom: 不许转载😡！！！
 
 # Comments
 # Built-in support Disqus (https://disqus.com) and LiveRe (https://livere.com),
 # for other comment system, see plugins
 comments:
-  # disqus:
-  #   shortname: disqus_shortname
-  #   # Or you can set disqus script URL directly
-  #   script: //disqus_shortname.disqus.com/embed.js
-  #   # Autoload, default to `true`, set to `false` to display a button
-  #   autoload: false
+#   disqus:
+#     shortname: disqus_shortname
+#   #   # Or you can set disqus script URL directly
+#     script: //disqus_shortname.disqus.com/embed.js
+#   #   # Autoload, default to `true`, set to `false` to display a button
+#     autoload: true
 
-  # livere:
-  #   uid: livere_uid
-  #   # LiveRe script, default to `https://cdn-city.livere.com/js/embed.dist.js`
-  #   script:
-  #   # Autoload, default to `true`, set to `false` to display a button
-  #   autoload: false
+#   livere:
+#     uid:  https://cdn-city.livere.com/js/embed.dist.js
+#   #   # LiveRe script, default to `https://cdn-city.livere.com/js/embed.dist.js`
+#     script:
+#   #   # Autoload, default to `true`, set to `false` to display a button
+#     autoload: true
 
 
 # ---------------------------------------------------------------
@@ -317,15 +312,15 @@ data_prefix:
 data_dir:
 
 # Favicon, default to `favicon.ico`
-favicon:
+favicon: /image/favicon.ico
 
 # Google analytics
-# ga: UA-00000000-0
+ga: UA-00000000-0
 
 # SEO
 seo:
   # Render structured-data in <head>, default to `false`
-  # structured_data: true
+  structured_data: true
 
 # PWA
 pwa:
@@ -376,6 +371,30 @@ pwa:
   #     - src: icon-144x144.png
   #       sizes: 144x144
   #       type: image/png
+
+#  下面是评论功能
+plugins:
+  - //unpkg.com/gitalk/dist/gitalk.css
+  - //unpkg.com/gitalk/dist/gitalk.min.js
+  - position: comments
+    template: |
+      <div id="gitalk-container"></div>
+      <script>
+        var gitalk = new Gitalk({
+          clientID: 'dc55a3062b1847f851fd',
+          clientSecret: 'fcecdcf3c4758542da487ea02b68e55e3edfd91a',
+          repo: 'wt812.github.io',
+          owner: 'wt812',
+          admin: ['wt812'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+      </script>
+
+
+
 
 # Plugins
 # Inject html snippet to a specified position, Or global inject scripts/styles.
